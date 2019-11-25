@@ -11,7 +11,8 @@
       *---------------------------------------------------------------*
       *  XXXX     99-99-9999              Prod version                *
       *  ABCD     11-10-2019              R61 AIRP Change             *
-      *  EFGH     11-01-2019              R61 NGVAM Change            * 
+      *  EFGH     11-01-2019              R61 NGVAM Change            *
+      *  XYZT     11-01-2019              R61 PR change               *
       *---------------------------------------------------------------*
       *                                   Record    Record     Key    *
       *  Function  Name     Organization  Format    Max-Min  Pos-Len  *
@@ -254,7 +255,8 @@
                subtract APPL-RESULT from APPL-RESULT
                move 'O' to CUSTLFFL-OPEN-FLAG
            else
-               add 16 to ZERO giving APPL-RESULT            ----- AIRP
+               add 10 to ZERO giving APPL-RESULT            ----- AIRP
+               display 'result' APPL-RESULT
            end-if
            if  APPL-AOK
                CONTINUE
